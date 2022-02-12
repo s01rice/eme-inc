@@ -1,13 +1,13 @@
 export const Team = [
     {
-        title: '[Member 1]',
+        title: 'chromedoves',
         url: '#',
-        desc: 'Flavor text about said team member.',
+        desc: 'Ex-Goldman Sachs investment banker. Playing with bubbles since I was 5. Have fun with it – otherwise, what\'s the point?',
     },
     {
-        title: '[Member 2]',
+        title: 'akilwrath',
         url: '#',
-        desc: 'Something about this seems fishy.',
+        desc: 'Ex-FAANG, Unicorn Engineer. Used to building systems, currently building a vibe. Mom does not approve.',
     },
     {
         title: '[Member 3]',

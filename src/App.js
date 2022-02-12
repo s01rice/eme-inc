@@ -11,7 +11,7 @@ function App() {
         <div className="mb-32">
 
           <p className="font-marker font-bold lg: text-xxl xs:text-6xl text-3xl text-fade-in delay-1 opacity-0 relative text-shadow-hd">
-            The Evil Media Empire
+            Evil Media Empire
           </p>
           <p className="px-1 font-normal my-8 text-fade-in delay-2 opacity-0">Building for the metaverse ... one JPEG at a time</p>
         </div>
