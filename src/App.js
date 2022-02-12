@@ -7,23 +7,23 @@ function App() {
       {/* <img src={logo} className="lg:h-40 h-24 lg:mb-12 mb-8 align-self-start justify-self-start text-left mr-auto" alt="logo" /> */}
 
 
-      <div className="xl:text-3xl xs:text-2xl max-w-5xl lg:space-y-8 space-y-4 font-mono">
+      <div className="xl:text-3xl xs:text-2xl text-xl max-w-8xl lg:space-y-8 space-y-4 font-mono">
         <div className="mb-32">
 
-          <p className="font-marker font-bold lg: text-xxl xs:text-6xl text-3xl text-fade-in delay-1 opacity-0 relative text-shadow-hd">
+          <p className="font-marker font-bold lg:text-xxl xs:text-6xl text-3xl text-fade-in delay-1 opacity-0 relative text-shadow-hd">
             Evil Media Empire
           </p>
-          <p className="px-1 font-normal my-8 text-fade-in delay-2 opacity-0">Building for the metaverse ... one JPEG at a time</p>
+          <p className="px-1 font-normal my-8 text-fade-in delay-2 opacity-0 xs:text-lg text-base">Building for the metaverse ... one JPEG at a time</p>
         </div>
-        <div className="team text-fade-in delay-3 opacity-0">
+        <div className="team text-fade-in delay-3 opacity-0 font-bold text-3xl">
           Team
         </div>
-        <div className="grid md:grid-cols-3 grid-cols-1 md:gap-x-40 gap-x-6 mt-4 text-xl text-fade-in delay-3 opacity-0">
+        <div className="grid lg:grid-cols-3 grid-cols-1 xl:gap-x-40 gap-x-20 mt-4 text-xl text-fade-in delay-3 opacity-0">
           {Team.map((member, index) => {
             return (
-              <div className="flex flex-col text-center" key={index}>
+              <div className="flex flex-col text-center my-5" key={index}>
                 <p className="font-bold py-2 md:text-2xl text-xl">{member.title}</p>
-                <p className="font-normal py-2">{member.desc}</p>
+                <p className="font-normal xs:text-lg text-sm py-2">{member.desc}</p>
               </div>
             )
           })}
