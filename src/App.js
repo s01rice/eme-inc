@@ -1,16 +1,34 @@
 import { Team } from "./Team";
 
 function App() {
+
+  function polygon(index) {
+    if (index == 0) return (
+      <svg viewBox="0 0 100 50">
+        <circle cx="50" cy="25" r="20" stroke="#FFFFFF" />
+      </svg>
+    )
+    else if (index == 1) return (
+      <svg viewBox="0 0 100 50">
+        <polygon points="50, 10 30, 45 70, 45" stroke="#FFFFFF" />
+      </svg>
+    )
+    return (
+      <svg viewBox="0 0 100 50">
+        <rect x="30" y="5" width="40" height="40" stroke="#FFFFFF" />
+      </svg>
+    )
+  }
   return (
-    <div className="bg-white h-full w-full flex flex-col p-8 lg:p-16 xl:px-32 2xl:px-64 justify-center items-center text-center min-h-screen border-[2rem] border-slate-50">
+    <div className="bg-black h-full w-full flex flex-col p-8 lg:p-16 xl:px-32 2xl:px-64 justify-center items-center text-center min-h-screen">
 
       {/* <img src={logo} className="lg:h-40 h-24 lg:mb-12 mb-8 align-self-start justify-self-start text-left mr-auto" alt="logo" /> */}
 
 
-      <div className="xl:text-3xl xs:text-2xl text-xl max-w-8xl lg:space-y-8 space-y-4 font-mono">
-        <div className="mb-32">
+      <div className="xl:text-3xl xs:text-2xl text-xl max-w-8xl lg:space-y-8 space-y-4 font-mono text-white">
+        <div className="mb-16">
 
-          <p className="font-marker font-bold lg:text-xxl xs:text-6xl text-3xl text-fade-in delay-1 opacity-0 relative text-shadow-hd">
+          <p className="font-bold lg:text-xxl xs:text-6xl text-3xl text-fade-in delay-1 opacity-0 relative text-shadow-hd">
             Evil Media Empire
           </p>
           <p className="px-1 font-normal my-8 text-fade-in delay-2 opacity-0 xs:text-lg text-base">Building for the metaverse ... one JPEG at a time</p>
@@ -22,6 +40,7 @@ function App() {
           {Team.map((member, index) => {
             return (
               <div className="flex flex-col text-center my-5" key={index}>
+                {polygon(index)}
                 <p className="font-bold py-2 md:text-2xl text-xl">{member.title}</p>
                 <p className="font-normal xs:text-lg text-sm py-2">{member.desc}</p>
               </div>
