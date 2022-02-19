@@ -31,7 +31,7 @@ function App() {
           <p className="font-bold lg:text-xxl xs:text-6xl text-3xl text-fade-in delay-1 opacity-0 relative text-shadow-hd">
             Evil Media Empire
           </p>
-          <p className="px-1 font-normal my-8 text-fade-in delay-2 opacity-0 xs:text-lg text-base">Building for the metaverse</p>
+          <p className="px-1 font-normal my-8 text-fade-in delay-2 opacity-0 xs:text-lg text-base">Building for the metaverse ... </p>
         </div>
         <div className="team text-fade-in delay-3 opacity-0 font-bold text-3xl">
           Team
@@ -43,7 +43,7 @@ function App() {
                 {polygon(index)}
 
                 <a href={member.twitter}>
-                  <p className="font-bold py-2 md:text-2xl text-xl">{member.title}
+                  <p className="font-bold py-2 md:text-2xl text-xl"><u>{member.title}</u>
                   </p>
                 </a>
                 <p className="font-normal xs:text-lg text-sm py-2">{member.desc}</p>
@@ -51,8 +51,8 @@ function App() {
             )
           })}
         </div>
-        <div className="xl:text-3xl xs:text-2xl text-xl max-w-8xl lg:space-y-8 space-y-4 font-mono text-white">
-          <div className="team text-fade-in delay-3 opacity-0 font text-3xl">
+        <div className="xl:text-1xl xs:text-1xl text-xl max-w-8xl lg:space-y-8 space-y-4 font-mono text-white">
+          <div className="team text-fade-in delay-3 opacity-0 font text-sm">
             hello@evilmediaempire.io
           </div>
         </div>
